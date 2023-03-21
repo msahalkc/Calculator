@@ -13,12 +13,12 @@
 :root{
     --color-black: #000;
     --color-text: #fff;
-    --color-num: #616161;
-    --color-ops: #323232;
-    --color-equal: #4cc2ff;
-    --color-equal-active: #2194cd;
+    --color-num: #323232;
+    --color-ops: #262626;
+    --color-equal: #FFB900;
+    --color-equal-active: #F5A623;
     --color-output: #202020;
-    --color-bg: #202020;
+    --color-bg: #1E1E1E;
 }
 
 body{
@@ -124,6 +124,7 @@ body{
     cursor: pointer;
     font-weight: 700;
     font-size: 3rem;
+    border-radius: 5px;
     background-color: var(--color-output);
 }
 

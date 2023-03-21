@@ -20,31 +20,33 @@ function clearLastEntry() {
 }
 
 function switchMode() {
-    
+    //light mode
     if (darkMode === true) {
         root.style.setProperty('--color-text', '#000')
-        root.style.setProperty('--color-num', '#ffffff')
-        root.style.setProperty('--color-ops', '#f9f9f9')
-        root.style.setProperty('--color-equal', '#0067c0')
-        root.style.setProperty('--color-output', '#f3f3f3')
-        root.style.setProperty('--color-bg', '#f3f3f3')
+        root.style.setProperty('--color-num', '#E0E0E0')
+        root.style.setProperty('--color-ops', '#D0D0D0')
+        root.style.setProperty('--color-equal', '#FFB900')
+        root.style.setProperty('--color-output', '#F7F7F7')
+        root.style.setProperty('--color-bg', '#F7F7F7')
+        root.style.setProperty('--color-equal-active', '#F5A623')
         icon = 'uil uil-moon';
         document.querySelector('.uil.uil-sun').className = icon
     }
 
     if(darkMode === false){
         root.style.setProperty('--color-text', '#fff')
-        root.style.setProperty('--color-num', '#616161')
-        root.style.setProperty('--color-ops', '#323232')
-        root.style.setProperty('--color-equal', '#4cc2ff')
+        root.style.setProperty('--color-num', '#323232')
+        root.style.setProperty('--color-ops', '#262626')
+        root.style.setProperty('--color-equal', '#FFB900')
         root.style.setProperty('--color-output', '#202020')
-        root.style.setProperty('--color-bg', '#202020')
+        root.style.setProperty('--color-bg', '#1E1E1E')
+        root.style.setProperty('--color-equal-active', '#F5A623')
         icon = 'uil uil-sun';
         document.querySelector('.uil.uil-moon').className = icon
     }
 }
 
 function flipMode() {
-    darkMode = !darkMode;
+    darkMode = !darkMode; //flip dark mode
     console.log(darkMode);
 }

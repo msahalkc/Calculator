@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+<body>
+    <div class="container">
+        <div class="Display">
+            <input type="number" name="" id="output">
+        </div>
+        <div class="clear">
+            <button type="menu" class="calc-item" onclick="clearResult()">C</button>
+        </div>
+        <div class="backspace">
+            <button type="menu" class="calc-item" onclick="clearLastEntry()"><i class="uil uil-backspace"></i></button>
+        </div>
+        <div class="seven">
+            <button type="menu" class="calc-item" onclick="addToResult('7')">7</button>
+        </div>
+        <div class="eight">
+            <button type="menu" class="calc-item" onclick="addToResult('8')">8</button>
+        </div>
+        <div class="nine">
+            <button type="menu" class="calc-item" onclick="addToResult('9')">9</button>
+        </div>
+        <div class="four">
+            <button type="menu" class="calc-item" onclick="addToResult('4')">4</button>
+        </div>
+        <div class="five">
+            <button type="menu" class="calc-item" onclick="addToResult('5')">5</button>
+        </div>
+        <div class="six">
+            <button type="menu" class="calc-item" onclick="addToResult('6')">6</button>
+        </div>
+        <div class="one">
+            <button type="menu" class="calc-item" onclick="addToResult('1')">1</button>
+        </div>
+        <div class="two">
+            <button type="menu" class="calc-item" onclick="addToResult('2')">2</button>
+        </div>
+        <div class="three">
+            <button type="menu" class="calc-item" onclick="addToResult('3')">3</button>
+        </div>
+
+        <div class="operations">
+            <div class="minus">
+                <button type="menu" class="calc-item" onclick="addToResult('-')">-</button>
+            </div>
+            <div class="plus">
+                <button type="menu" class="calc-item" onclick="addToResult('+')">+</button>
+            </div>
+            <div class="divide">
+                <button type="menu" class="calc-item" onclick="addToResult('/')">/</button>
+            </div>
+            <div class="multiply">
+                <button type="menu" class="calc-item" onclick="addToResult('*')">x</button>
+            </div>
+        </div>
+
+        <div class="zero">
+            <button type="menu" class="calc-item" onclick="addToResult('0')">0</button>
+        </div>
+        <div class="double-zero">
+            <button type="menu" class="calc-item" onclick="addToResult('00')">00</button>
+        </div>
+        <div class="point">
+            <button type="menu" class="calc-item" onclick="addToResult('.')">.</button>
+        </div>
+        <div class="equal-to">
+            <button type="menu" class="calc-item" onclick="calculate()">=</button>
+        </div>
+    </div>
+
+
+
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -145,3 +145,21 @@ body{
     border-radius: 5px;
 }
   
+
+@media screen and (max-width: 750px){
+    .container{
+        height: 50vh;
+        width: 30vh;
+        height: 50dvh;
+        width: 30dvh;
+        padding: 1vh;
+        padding: 1dvh;
+        border-radius: 0.5vh;
+        border-radius: 0.5dvh;
+    }
+
+    .container button{
+        font-weight: 400;
+        font-size: 1rem;
+    }
+}

@@ -48,5 +48,4 @@ function switchMode() {
 
 function flipMode() {
     darkMode = !darkMode; //flip dark mode
-    console.log(darkMode);
 }

@@ -166,11 +166,9 @@ body{
 
 @media screen and (max-width: 750px){
     .container{
+        height: 100%;
+        width: 100%;
         margin: 0;
-        height: 100vh;
-        width: 100vh;
-        height: 100dvh;
-        width: 100dvh;
         padding: 1vh;
         padding: 1dvh;
         border-radius: 0.5vh;
